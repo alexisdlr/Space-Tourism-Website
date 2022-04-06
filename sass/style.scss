@@ -1,0 +1,39 @@
+@import "primary-hero";
+@import "variables";
+@import "header";
+@import "explore";
+*{
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url("/starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: $barlow;
+    overflow-x: hidden;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    li {
+        list-style: none;
+    }
+    @media (max-width: 560px) {
+        background: url("/starter-code/assets/home/background-home-mobile.jpg") no-repeat center/cover;
+        overflow-x: hidden;
+        min-height: 110vh;
+
+    }
+
+}
+.sr-only {
+    display: none;
+}
+

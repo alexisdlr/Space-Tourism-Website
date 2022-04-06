@@ -1,0 +1,22 @@
+.container-titan {
+    width: 380px;
+    height: 380px;
+    background: url('/starter-code/assets/destination/image-titan.png') no-repeat center/cover;
+    @media (max-width: 35em) {
+        width: 280px;
+        height: 280px;
+    }
+    @media (max-width: 500px) {
+        width: 250px;
+        height: 250px;
+    }
+    @media (min-width: 560px)and (max-width:820px) {
+        width: 270px;
+        height: 270px;
+    }
+    @media (min-width: 820px)and (max-width:1000px) {
+        width: 260px;
+        height: 260px;
+    }
+    
+}
