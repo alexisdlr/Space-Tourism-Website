@@ -408,7 +408,7 @@
       width: 70%; } }
 
 .container-img {
-  width: 55%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,10 +439,10 @@
       border-bottom: 1px solid grey; } }
 
 .container-pilot {
-  width: 48%;
+  width: 50%;
   height: 580px;
   background: url("/starter-code/assets/crew/image-victor-glover.png") no-repeat;
-  background-size: 400px 580px; }
+  background-size: 425px 580px; }
   @media (max-width: 35em) {
     .container-pilot {
       height: 50%;
@@ -517,10 +517,10 @@
       border-bottom: 1px solid grey; } }
 
 .container-flight {
-  width: 55%;
+  width: 60%;
   height: 580px;
   background: url("/starter-code/assets/crew/image-anousheh-ansari.png") no-repeat;
-  background-size: 450px 580px; }
+  background-size: 460px 580px; }
   @media (max-width: 35em) {
     .container-flight {
       height: 50%;
