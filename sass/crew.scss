@@ -1,13 +1,13 @@
-@import "primary-hero";
-@import "variables";
-@import "header";
-@import "container-moonbg";
 @import "hero-moon";
-@import "container-link-pages";
+@import "container-link-pages-crew";
 @import "marsBg";
 @import "container-europa";
 @import "titan";
 @import "container-douglas";
+@import "header";
+@import "container-specialist";
+@import "container-pilot";
+@import "container-flight";
 *{
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
     line-height: 1.5;
     margin: 0;
-    background-image: url("/starter-code/assets/destination/background-destination-desktop.jpg");
+    background-image: url("/starter-code/assets/crew/background-crew-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -32,7 +32,7 @@ body {
         list-style: none;
     }
     @media (max-width: 560px) {
-        background-image: url("/starter-code/assets/destination/background-destination-tablet.jpg");
+        background-image: url("/starter-code/assets/crew/background-crew-tablet.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -52,4 +52,18 @@ hr {
 
 .sr-only {
     display: none;
+}
+
+.column {
+    @media (max-width: 35em) {
+      flex-direction: column-reverse;
+    }
+    @media (min-width: 561px)and (max-width:850px) {
+        flex-direction: column-reverse;
+
+    }
+    @media (min-width: 850px)and (max-width:1000px) {
+        flex-direction: column-reverse;
+
+    }
 }

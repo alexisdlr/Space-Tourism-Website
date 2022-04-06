@@ -1,3 +1,4 @@
+@import "variables";
 .hero-moon {
     width:40%;
     text-align: center;
@@ -90,3 +91,23 @@
     
     }
 }
+
+.crew {
+    @media (max-width: 35em) {
+        padding: 0;
+    }
+}
+.commander {
+
+    p:first-child {
+        font-family: $bellefair;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #D0D6F9;
+    }
+    p:last-child {
+        padding: 0 2rem;
+    }
+        
+    }
+
