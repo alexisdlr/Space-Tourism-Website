@@ -1,0 +1,65 @@
+@import "primary-hero";
+@import "variables";
+@import "header";
+@import "container-moonbg";
+@import "hero-moon";
+@import "container-link-tec";
+*{
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url("/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: $barlow;
+    overflow-x: hidden;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    li {
+        list-style: none;
+    }
+    @media (max-width: 560px) {
+        background-image: url("/starter-code/assets/crew/background-crew-tablet.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        min-height: 110vh;
+
+    }
+
+}
+hr {
+    width:80%;
+}
+.primary-header{
+    margin-bottom: 1rem;
+}
+
+.sr-only {
+    display: none;
+}
+
+.column {
+    @media (max-width: 35em) {
+      flex-direction: column-reverse;
+    }
+    @media (min-width: 561px)and (max-width:850px) {
+        flex-direction: column-reverse;
+
+    }
+    @media (min-width: 850px)and (max-width:1000px) {
+        flex-direction: column-reverse;
+
+    }
+}
