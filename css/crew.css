@@ -407,7 +407,7 @@
       width: 70%; } }
 
 .container-img {
-  width: 60%;
+  width: 62%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,10 +438,10 @@
       border-bottom: 1px solid grey; } }
 
 .container-pilot {
-  width: 50%;
+  width: 55%;
   height: 580px;
   background: url("/starter-code/assets/crew/image-victor-glover.png") no-repeat;
-  background-size: 425px 580px; }
+  background-size: 460px 580px; }
   @media (max-width: 35em) {
     .container-pilot {
       height: 50%;
