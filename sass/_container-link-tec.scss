@@ -3,15 +3,17 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-bottom: 1rem;
     .links-title {
         width: 100%;
         display: flex;
         justify-content: center;
-        h2 {
+        h4 {
             font-family: $bellefair;
             text-transform: uppercase;
             font-size: 1.2rem;
+            @media (max-width: 35em) {
+                font-size:1rem;
+             }
         }
     }
     ul {
@@ -35,12 +37,8 @@
             &:hover {
                 transition: .5s all;
                 transform: scale(1.1);
-                opacity: .5;
                 background-color:#eee;
                 color: #000;
-            }
-            @media (max-width: 35em) {
-
             }
             
         }

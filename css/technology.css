@@ -244,16 +244,18 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem; }
+  align-items: center; }
   .container-link-tec .links-title {
     width: 100%;
     display: flex;
     justify-content: center; }
-    .container-link-tec .links-title h2 {
+    .container-link-tec .links-title h4 {
       font-family: "Bellefair", serif;
       text-transform: uppercase;
       font-size: 1.2rem; }
+      @media (max-width: 35em) {
+        .container-link-tec .links-title h4 {
+          font-size: 1rem; } }
   .container-link-tec ul {
     width: 80%;
     display: flex;
@@ -275,9 +277,113 @@
       .container-link-tec ul .link-tec:hover {
         transition: .5s all;
         transform: scale(1.1);
-        opacity: .5;
         background-color: #eee;
         color: #000; }
+
+.container-img {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow-x: hidden; }
+  @media (max-width: 35em) {
+    .container-img {
+      width: 100%; } }
+  @media (min-width: 560px) and (max-width: 820px) {
+    .container-img {
+      width: 100%; } }
+  @media (min-width: 820px) and (max-width: 1000px) {
+    .container-img {
+      width: 100%; } }
+  .container-img .container-vehicle {
+    width: 600px;
+    height: 550px;
+    background: url("/starter-code/assets/technology/image-launch-vehicle-portrait.jpg") no-repeat center/cover; }
+    @media (max-width: 35em) {
+      .container-img .container-vehicle {
+        background: url("/starter-code/assets/technology/image-launch-vehicle-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 310px; } }
+    @media (min-width: 560px) and (max-width: 820px) {
+      .container-img .container-vehicle {
+        background: url("/starter-code/assets/technology/image-launch-vehicle-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 300px; } }
+    @media (min-width: 820px) and (max-width: 1000px) {
+      .container-img .container-vehicle {
+        background: url("/starter-code/assets/technology/image-launch-vehicle-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 350px; } }
+
+.container-img {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow-x: hidden; }
+  @media (max-width: 35em) {
+    .container-img {
+      width: 100%; } }
+  @media (min-width: 560px) and (max-width: 820px) {
+    .container-img {
+      width: 100%; } }
+  @media (min-width: 820px) and (max-width: 1000px) {
+    .container-img {
+      width: 100%; } }
+  .container-img .container-spaceport {
+    width: 600px;
+    height: 550px;
+    background: url("/starter-code/assets/technology/image-spaceport-portrait.jpg") no-repeat center/cover; }
+    @media (max-width: 35em) {
+      .container-img .container-spaceport {
+        background: url("/starter-code/assets/technology/image-spaceport-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 310px; } }
+    @media (min-width: 560px) and (max-width: 820px) {
+      .container-img .container-spaceport {
+        background: url("/starter-code/assets/technology/image-spaceport-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 300px; } }
+    @media (min-width: 820px) and (max-width: 1000px) {
+      .container-img .container-spaceport {
+        background: url("/starter-code/assets/technology/image-spaceport-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 350px; } }
+
+.container-img {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow-x: hidden; }
+  @media (max-width: 35em) {
+    .container-img {
+      width: 100%; } }
+  @media (min-width: 560px) and (max-width: 820px) {
+    .container-img {
+      width: 100%; } }
+  @media (min-width: 820px) and (max-width: 1000px) {
+    .container-img {
+      width: 100%; } }
+  .container-img .container-capsule {
+    width: 600px;
+    height: 550px;
+    background: url("/starter-code/assets/technology/image-space-capsule-portrait.jpg") no-repeat center/cover; }
+    @media (max-width: 35em) {
+      .container-img .container-capsule {
+        background: url("/starter-code/assets/technology/image-space-capsule-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 310px; } }
+    @media (min-width: 560px) and (max-width: 820px) {
+      .container-img .container-capsule {
+        background: url("/starter-code/assets/technology/image-space-capsule-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 300px; } }
+    @media (min-width: 820px) and (max-width: 1000px) {
+      .container-img .container-capsule {
+        background: url("/starter-code/assets/technology/image-space-capsule-landscape.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 350px; } }
 
 * {
   box-sizing: border-box; }
@@ -286,7 +392,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   margin: 0;
-  background-image: url("/starter-code/assets/crew/background-crew-desktop.jpg");
+  background-image: url("/starter-code/assets/technology/background-technology-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -301,7 +407,7 @@ body {
     list-style: none; }
   @media (max-width: 560px) {
     body {
-      background-image: url("/starter-code/assets/crew/background-crew-tablet.jpg");
+      background-image: url("/starter-code/assets/technology/background-technology-tablet.jpg");
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -327,5 +433,16 @@ hr {
 @media (min-width: 850px) and (max-width: 1000px) {
   .column {
     flex-direction: column-reverse; } }
+
+.hero-tec {
+  width: 60%; }
+  @media (max-width: 35em) {
+    .hero-tec {
+      width: 100%;
+      padding: 2rem 0;
+      margin-bottom: 1rem; } }
+  @media (min-width: 560px) and (max-width: 820px) {
+    .hero-tec {
+      width: 100%; } }
 
 /*# sourceMappingURL=technology.css.map */

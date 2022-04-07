@@ -3,30 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/technology.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Barlow:wght@300;400&family=Bellefair&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <header class="primary-header" id="header">
+    <div>
+      <img src="/starter-code/assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
+      <button class="menu-btn" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+    <nav class="navbar" id="navbar">
+      <ul data-visible="false" id="primary-nav" class="primary-nav">
+        <li><a href="index.html" class="link"><span aria-hidden="true">00</span>Home</a></li>
+        <li><a href="destination.html" class="link"><span aria-hidden="true">01</span> Destination</a></li>
+        <li><a href="crew-commander.html" class="link"><span aria-hidden="true">02</span>Crew</a></li>
+        <li><a href="technology-vehicle.html" class="link"><span aria-hidden="true">03</span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="primary-hero column ">
+      
+      <div class="hero-moon hero-tec">
+          <div class="container-link-tec">
+              <div class="links-title">
+                  <h4>
+                    03 Space launch 101
+                  </h4>
+              </div>
+              <ul data-visible="false" class="nav-moon">
+                  <li ><a href="technology-vehicle.html" class="link-tec">1</a></li>
+                  <li ><a href="technology-spaceport.html" class="link-tec" >2</a></li>
+                  <li ><a href="technology-capsule.html" class="link-tec">3</a></li>
+                </ul>
+          </div>
+          <div class="moon-description commander">
+            <p> 
+              The terminology...
+            </p>
+              <h1>
+                Space capsule
+              </h1>
+              <p>              
+                A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+                capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+                you'll spend your time during the flight. It includes a space gym, cinema, 
+                and plenty of other activities to keep you entertained.
+              </p>
+          </div>
+      </div>
+      <div class="container-img">
+        <div class="container-capsule">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/nav.js" defer></script>
 </body>
 </html>
